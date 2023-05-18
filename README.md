@@ -1,15 +1,5 @@
-# Leverage php 8 attribute to pass meta data to inertia via props
+# Laravel Inertia Meta Attributes
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/boring-dragon/laravel-inertia-meta-attributes.svg?style=flat-square)](https://packagist.org/packages/boring-dragon/laravel-inertia-meta-attributes)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/boring-dragon/laravel-inertia-meta-attributes/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/boring-dragon/laravel-inertia-meta-attributes/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/boring-dragon/laravel-inertia-meta-attributes/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/boring-dragon/laravel-inertia-meta-attributes/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/boring-dragon/laravel-inertia-meta-attributes.svg?style=flat-square)](https://packagist.org/packages/boring-dragon/laravel-inertia-meta-attributes)
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-inertia-meta-attributes.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-inertia-meta-attributes)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
