@@ -1,6 +1,6 @@
 {
     "name": "boring-dragon/laravel-inertia-meta",
-    "description": "Leverage php 8 attribute to pass meta data to inertia via props",
+    "description": "Leverage php attributes to pass meta data to inertia via props",
     "keywords": [
         "boring-dragon",
         "laravel",

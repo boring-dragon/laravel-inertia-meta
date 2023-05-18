@@ -1,5 +1,4 @@
-# Laravel Inertia Meta Attributes
-
+![cover](cover.png)
 
 ## Installation
 
