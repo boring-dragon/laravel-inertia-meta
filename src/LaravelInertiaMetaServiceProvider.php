@@ -41,6 +41,7 @@ class LaravelInertiaMetaServiceProvider extends PackageServiceProvider
             }
 
             $reflectionClass = new \ReflectionClass($classInstance);
+            $methodsWithPageAttribute = [];
 
             foreach ($reflectionClass->getMethods() as $method) {
 
@@ -51,6 +52,11 @@ class LaravelInertiaMetaServiceProvider extends PackageServiceProvider
                 } catch (Throwable) {
                     continue;
                 }
+            }
+
+            if (! $methodsWithPageAttribute) {
+                /** @var Response $this */
+                return $this;
             }
 
             $currentMethod = collect(debug_backtrace())->first(function ($trace) use ($methodsWithPageAttribute) {
