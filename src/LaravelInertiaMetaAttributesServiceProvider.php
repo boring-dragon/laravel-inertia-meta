@@ -18,4 +18,9 @@ class LaravelInertiaMetaAttributesServiceProvider extends PackageServiceProvider
             ->name('laravel-inertia-meta-attributes')
             ->hasConfigFile();
     }
+
+    public function packageBooted()
+    {
+
+    }
 }
