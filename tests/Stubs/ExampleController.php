@@ -14,7 +14,7 @@ class ExampleController
         title: 'Welcome',
         description: 'This is the welcome page'
     )]
-    public function index() : Response
+    public function index(): Response
     {
         return Inertia::render('Pages/Welcome')->withPageMeta();
     }
