@@ -1,5 +1,5 @@
 <?php
 
-test('yooo', function(){
+test('yooo', function () {
     $this->assertTrue(true);
 });
