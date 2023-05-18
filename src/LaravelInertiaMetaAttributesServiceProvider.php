@@ -2,9 +2,9 @@
 
 namespace BoringDragon\LaravelInertiaMetaAttributes;
 
+use BoringDragon\LaravelInertiaMetaAttributes\Commands\LaravelInertiaMetaAttributesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BoringDragon\LaravelInertiaMetaAttributes\Commands\LaravelInertiaMetaAttributesCommand;
 
 class LaravelInertiaMetaAttributesServiceProvider extends PackageServiceProvider
 {

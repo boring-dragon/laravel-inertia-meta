@@ -2,9 +2,9 @@
 
 namespace BoringDragon\LaravelInertiaMetaAttributes\Tests;
 
+use BoringDragon\LaravelInertiaMetaAttributes\LaravelInertiaMetaAttributesServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use BoringDragon\LaravelInertiaMetaAttributes\LaravelInertiaMetaAttributesServiceProvider;
 
 class TestCase extends Orchestra
 {
