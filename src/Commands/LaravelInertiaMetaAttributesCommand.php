@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace BoringDragon\LaravelInertiaMetaAttributes\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelInertiaMetaAttributesCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-inertia-meta-attributes';
 
     public $description = 'My command';
 
