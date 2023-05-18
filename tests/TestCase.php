@@ -1,6 +1,6 @@
 <?php
 
-namespace BoringDragon\LaravelInertiaMetaAttributes\Tests;
+namespace BoringDragon\LaravelInertiaMeta\Tests;
 
 use BoringDragon\LaravelInertiaMeta\LaravelInertiaMetaServiceProvider;
 use Illuminate\Support\Facades\View;

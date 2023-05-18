@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BoringDragon\LaravelInertiaMeta\Tests\Stubs;
 
+use BoringDragon\LaravelInertiaMeta\Attributes\Page;
 use Inertia\Inertia;
 use Inertia\Response;
-use BoringDragon\LaravelInertiaMeta\Attributes\Page;
 
 class ExampleController
 {

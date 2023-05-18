@@ -3,9 +3,9 @@
 namespace BoringDragon\LaravelInertiaMeta;
 
 use BoringDragon\LaravelInertiaMeta\Attributes\Page;
+use Inertia\Response;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Inertia\Response;
 use Throwable;
 
 class LaravelInertiaMetaServiceProvider extends PackageServiceProvider
@@ -36,8 +36,8 @@ class LaravelInertiaMetaServiceProvider extends PackageServiceProvider
 
             $classInstance = app($caller['class']);
 
-            if (!$classInstance) {
-                throw new \Exception('cannot find class instance of ' . $caller['class']);
+            if (! $classInstance) {
+                throw new \Exception('cannot find class instance of '.$caller['class']);
             }
 
             $reflectionClass = new \ReflectionClass($classInstance);
@@ -59,7 +59,7 @@ class LaravelInertiaMetaServiceProvider extends PackageServiceProvider
                 })->toArray());
             });
 
-            if (!$currentMethod) {
+            if (! $currentMethod) {
                 throw new \Exception('withPageMeta must be called inside a controller method with Page attribute');
             }
 
