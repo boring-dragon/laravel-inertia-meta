@@ -2,8 +2,10 @@
 
 namespace BoringDragon\LaravelInertiaMetaAttributes\Tests;
 
-use BoringDragon\LaravelInertiaMetaAttributes\LaravelInertiaMetaAttributesServiceProvider;
-use Illuminate\Database\Eloquent\Factories\Factory;
+use BoringDragon\LaravelInertiaMeta\LaravelInertiaMetaServiceProvider;
+use Illuminate\Support\Facades\View;
+use Inertia\Inertia;
+use Inertia\ServiceProvider as InertiaServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -12,15 +14,19 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'BoringDragon\\LaravelInertiaMetaAttributes\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
+        parent::setUp();
+
+        View::addLocation(__DIR__.'/Stubs');
+        Inertia::setRootView('app');
+        config()->set('inertia.testing.ensure_pages_exist', false);
+        config()->set('inertia.testing.page_paths', [realpath(__DIR__)]);
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelInertiaMetaAttributesServiceProvider::class,
+            InertiaServiceProvider::class,
+            LaravelInertiaMetaServiceProvider::class,
         ];
     }
 
@@ -28,9 +34,5 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-inertia-meta-attributes_table.php.stub';
-        $migration->up();
-        */
     }
 }

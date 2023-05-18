@@ -1,12 +1,12 @@
 {
-    "name": "boring-dragon/laravel-inertia-meta-attributes",
+    "name": "boring-dragon/laravel-inertia-meta",
     "description": "Leverage php 8 attribute to pass meta data to inertia via props",
     "keywords": [
         "boring-dragon",
         "laravel",
-        "laravel-inertia-meta-attributes"
+        "laravel-inertia-meta"
     ],
-    "homepage": "https://github.com/boring-dragon/laravel-inertia-meta-attributes",
+    "homepage": "https://github.com/boring-dragon/laravel-inertia-meta",
     "license": "MIT",
     "authors": [
         {
@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^10.0"
+        "illuminate/contracts": "^10.0",
+        "inertiajs/inertia-laravel": "^0.6.9",
+        "spatie/laravel-package-tools": "^1.14.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -34,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "BoringDragon\\LaravelInertiaMetaAttributes\\": "src/",
-            "BoringDragon\\LaravelInertiaMetaAttributes\\Database\\Factories\\": "database/factories/"
+            "BoringDragon\\LaravelInertiaMeta\\": "src/",
+            "BoringDragon\\LaravelInertiaMeta\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BoringDragon\\LaravelInertiaMetaAttributes\\Tests\\": "tests/"
+            "BoringDragon\\LaravelInertiaMeta\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -60,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BoringDragon\\LaravelInertiaMetaAttributes\\LaravelInertiaMetaAttributesServiceProvider"
+                "BoringDragon\\LaravelInertiaMeta\\LaravelInertiaMetaServiceProvider"
             ],
             "aliases": {
-                "LaravelInertiaMetaAttributes": "BoringDragon\\LaravelInertiaMetaAttributes\\Facades\\LaravelInertiaMetaAttributes"
+                "LaravelInertiaMeta": "BoringDragon\\LaravelInertiaMeta\\Facades\\LaravelInertiaMeta"
             }
         }
     },
