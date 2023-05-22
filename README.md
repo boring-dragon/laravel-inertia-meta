@@ -4,6 +4,8 @@
 [![PHPStan](https://github.com/boring-dragon/laravel-inertia-meta-attributes/actions/workflows/phpstan.yml/badge.svg)](https://github.com/boring-dragon/laravel-inertia-meta-attributes/actions/workflows/phpstan.yml)
 [![run-tests](https://github.com/boring-dragon/laravel-inertia-meta-attributes/actions/workflows/run-tests.yml/badge.svg)](https://github.com/boring-dragon/laravel-inertia-meta-attributes/actions/workflows/run-tests.yml)
 
+### Note: This package is experimental
+
 ## Installation
 
 You can install the package via composer:
